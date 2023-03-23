@@ -1,6 +1,6 @@
 package homework;
 
 public interface Shape {
-    void Perimeter();
-    void Area();
+    double Perimeter();
+    double Area();
 }

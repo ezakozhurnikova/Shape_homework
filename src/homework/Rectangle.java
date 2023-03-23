@@ -10,15 +10,24 @@ public class Rectangle implements Shape{
     }
 
     @Override
-    public void Area() {
-        int s=length*width;
-        System.out.println("Area of Rectangle is "+s);
+    public double Area() {
+        double s=length*width;
+        return s;
+
     }
 
     @Override
-    public void Perimeter() {
-        int perimeter=2*(length+width);
-        System.out.println("Perimeter of Rectangle is "+perimeter);
+    public double Perimeter() {
+        double perimeter=2*(length+width);
+        return perimeter;
 
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public int getWidth() {
+        return width;
     }
 }

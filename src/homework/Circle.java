@@ -9,16 +9,25 @@ public class Circle implements Shape{
     }
 
     @Override
-    public void Area() {
+    public double Area() {
+
         double s=p*(r*r);
-        System.out.println("Area of a Circle is "+s);
+      return s;
 
     }
 
     @Override
-    public void Perimeter() {
+    public double Perimeter() {
         double perimeter=2*r*p;
-        System.out.println("Length of circumference is "+perimeter);
+        return perimeter;
 
+    }
+
+    public int getR() {
+        return r;
+    }
+
+    public double getP() {
+        return p;
     }
 }
